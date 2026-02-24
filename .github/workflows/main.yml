@@ -40,7 +40,7 @@ jobs:
                 port: ${{ secrets.PORT }}
                 script: |
                   eval "$(ssh-agent -s)"
-                  ssh-add ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCpXpZQn2SMfCJwlBMub7fKH7M8wEqBN0kTnGWDH5a8miCh0qT5igzhhSHNHJeuw0lBHy4EKiH/hAtXMS5vNtvueBb+IiZjz0AxozWg/47n05atSmRuqFzvJoYp7EDvaxxcCbc9BtOM1T6ZcXNO5ZgXu8RhktEYZ6xtNdnelcQmUiFJVe1cys4ZP9C60uJcwzv+fL2PFp+J5R2uMEqga4N8QvPOO7kuHMn5wQqy9aW59ot6JOlfT1LoobIS7O6Rt3XgLQ943+zSueJ4HRALgrhSa+NSYY1GqBlLTn7aeY/bgPcV3yfXA8rv9OEq2x13TqWSMqRdh5PTxwL3RGU5a7z2DubwnCTo84dEwbK8yKTwBIQQL+hzgTjARBXTX4jhcEKLOVJabxY8rbkwya+J0d6w3d04hv/zE/O2CWkh+Y3krv5fXUDamrHeirVdl8zCDLXw/rqu3kZ110UwwLJmmGL7RJuetoKqyUSbF3o9madJKMI72T0DEek376FmIuEGMJ5yEMWCTpk+fkx+/+khz4X/S2elmDsKVXvMn0vZPhEizTPblTlX+7+b+2mCPvb8bNCgkuKy1RC1Qky8eshNQVatYt+2Fl+EpxsouWMwv75KJ0MxsPQ7Dj7tEmtLvEe1yxGmjcGR7zzgYXTqFzQ4WiMGKbmHsiLV8tJLJG1uj25i/w== Praktikan50
+                  ssh-add ~/.ssh/ssh-praktikan50
                   echo "Cek folder project";
                   [ ! -d "${HOME}/senpro/519144/modul02/senpro-github-action/" ] &&
                   {
